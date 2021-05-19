@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "lerna run --parallel start",
+    "build": "lerna run build",
+    "serve": "lerna run --parallel serve",
+    "clean": "lerna run --parallel clean"
+  },
+  "workspaces": {
+    "packages": [
+      "shell",
+      "message-center",
+      "report-center"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "3.22.1"
+  },
+  "dependencies": {
+    "webpack": "^5.37.1"
+  }
+}
